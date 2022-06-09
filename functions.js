@@ -14,7 +14,7 @@ function interpolateSomething(name) {
   console.log(`Hello my name is ${name}.`);
 }
 
-interpolateSomething(Todd);
+interpolateSomething("Todd");
 
 // 3: Write a function that has 3 parameters: a string and two numbers. The String will be the name of a company, and the numbers will represent the minimum and maximum of a pay range for a posted job. The function should print out a sentence that includes the name of the company and the range itself (if the numbers passed in are 90000 and 110000, the pay range is 20000).
 
@@ -23,13 +23,14 @@ function companyExample(companyName, num1, num2) {
   console.log(`Hello, we are ${companyName}. Our pay range is ${payRange}.`);
 }
 
-companyExample(Facebook, 800,000, 600,000);
+companyExample("Facebook", 800,000, 600,000);
 
 // 4: Write a function that satifies the following interaction pattern:
 
 function checkStock(num, word) {
-
-  console.log()
+if (num === 4) {console.log(`${word} is stocked`)}
+else if (num <= 3 && num >= 1) {console.log(`${word} - running LOW`)}
+else if (num === 0) {console.log(`${word} - OUT of stock!`)};
 }
 
 
